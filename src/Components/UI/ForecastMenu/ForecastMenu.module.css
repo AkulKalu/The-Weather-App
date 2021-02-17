@@ -1,0 +1,38 @@
+.Menu {
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 90vw;
+    height: 6vh;
+}
+.Menu::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color:  rgba(245, 245, 245, 0.836);
+    transform-origin: center;
+}
+.Underlinie::after {
+    animation: ss 1.8s ease-out;
+}
+@keyframes ss {
+    40% {
+        transform: scaleX(0.3);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    .Menu {
+        display: flex;
+        margin: auto;
+        width: 65vw;
+        height: 6vh;
+    }
+}

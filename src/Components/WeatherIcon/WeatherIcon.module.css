@@ -1,0 +1,36 @@
+.Icon {
+    display: block;
+    margin: auto;
+}
+.Large {
+    height: 18vh;
+}
+.Small {
+    height: 4.4vh;
+}
+.Night {
+    position: absolute;
+    z-index: -1;
+   
+    left: 20%;
+        top: -5px;
+}
+.Wrapp {
+   position: relative;
+   width: fit-content;
+   margin: auto;
+}
+
+@media only screen and (min-width: 1367px) {
+    .Large {
+        height: 25vh;
+    }
+    .Night {
+        left:-6px;
+        top: -8px;
+    }
+    .Small {
+        height: 5vh;
+    }
+    
+}

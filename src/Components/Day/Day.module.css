@@ -1,0 +1,73 @@
+.Card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 35vh;
+  cursor: pointer;
+  font-size: 2.5vh;
+  transition: transform 0.5s;
+}
+.Card span {
+  padding: 0.4vh;
+}
+.Details {
+  font-size: 2vh;
+}
+.Details span:nth-child(odd) {
+  width: 100%;
+  /* margin: 0.4vh; */
+  background-color: rgba(218, 218, 2, 0.767);
+}
+.InnerWrap {
+   backdrop-filter: blur(2px);
+   background-color: rgba(51, 51, 90, 0.349);
+   border: 1px solid rgba(255, 255, 255, 0.418) ;
+   border-radius: 10px;
+   box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.418);
+   height: 35vh;
+   width: 90vw;
+   overflow: hidden;
+}
+.InnerWrap:active .Card {
+  transform:translateY(-100%);
+ }
+
+.Wrap {
+  position: relative;
+  padding: 0.5rem;
+}
+
+@media only screen and (min-width: 1025px)  {
+ .Card {
+   font-size: 2.1vh;
+ }
+ .InnerWrap {
+  width: 12vw;
+ }
+ .InnerWrap:hover .Card {
+  transform:translateY(-100%);
+ }
+ .Details {
+   font-size: 2vh;
+ }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1400px)  {
+  .Card {
+    font-size: 1.6vh;
+    height: 28vh;
+  }
+  .InnerWrap {
+   width: 13vw;
+   height: 28vh;
+  }
+  .Card span {
+  }
+  .Details {
+    font-size: 1.6vh;
+  }
+ }
+
+

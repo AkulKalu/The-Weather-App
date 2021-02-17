@@ -1,0 +1,17 @@
+.Wrap {
+   display: flex;
+   flex-direction: column;
+   overflow-y: scroll;
+   height: 86vh;
+}
+
+
+@media only screen and (min-width: 1025px)  {
+    .Wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        overflow-y: unset;
+        height: 50vh;
+     } 
+}

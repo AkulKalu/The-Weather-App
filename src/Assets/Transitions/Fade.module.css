@@ -1,0 +1,29 @@
+.enter {
+    opacity: 0;
+}
+.enterActive {
+    opacity: 1;
+}
+.exit {
+    opacity: 1;
+}
+.exitActive {
+    opacity: 0;
+}
+
+.entering {
+    animation: fade 0.4s ease-out forwards ;
+}
+.exiting {
+    animation: fade 0.4s ease-in forwards;
+    animation-direction: reverse;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

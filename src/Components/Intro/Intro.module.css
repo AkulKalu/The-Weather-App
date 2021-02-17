@@ -1,0 +1,38 @@
+.Wrap {
+    width: fit-content;
+    color: ivory;
+    margin: 8vh auto;
+}
+.P1, .P2, .P3 {
+    margin: 0;
+    font-size: 12vh;
+    font-weight: 900;
+    opacity: 0;
+}
+.P1 {
+    text-align: left;
+    animation: fadeIn 4s ease-in-out forwards;
+}
+.P2 {
+    font-size: 9vh;
+    text-align: center;
+    text-indent: 3rem;
+    animation: fadeIn 4s ease-in-out forwards;
+    animation-delay: 0.7s;
+}
+.P3 {
+    text-align: right;
+    animation: fadeIn 4s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

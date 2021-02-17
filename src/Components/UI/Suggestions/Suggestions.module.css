@@ -1,0 +1,51 @@
+.Container {
+    width: 90vw;
+    min-height: 300px;
+    max-height: 85vh;
+    position: absolute;
+    z-index: 50;
+    top: 2.5rem;
+    border-radius: 5px;
+    background-color:rgba(51, 51, 90, 0.589);
+    border: 1px solid  rgb(241, 239, 207);
+    box-shadow: 2px 2px 5px rgba(214, 193, 193, 0.582);
+    transition: opacity 0.4s;
+    overflow-y: scroll;
+    font-size: 1.9vh;
+}
+
+.List {
+    list-style: none;
+    padding: 0;
+}
+.ListItem {
+    color: rgb(241, 239, 207);
+    text-shadow: 1px 1px 2px black;
+    padding: 0.5rem;
+    transition: text-indent 0.3s;
+}
+.ListItem:hover {
+    cursor: pointer;
+    background-color:rgba(255, 217, 0, 0.692);
+    text-indent: 1rem ;
+}
+.Error {
+    width: 100%;
+    min-height: 30vh;
+    color: ivory;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (min-width: 1025px) {
+    .Container {
+        width: 60vw;
+        top: 4vh;
+        overflow-y: unset;
+    }
+}
+@media only screen and (max-height: 550px) {
+    .Container {
+        font-size: 0.8rem;
+    }
+}

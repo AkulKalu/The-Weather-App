@@ -1,0 +1,41 @@
+.Text {
+    text-align: center;
+    font-size: 3vw;
+    width: 50%;
+    margin: auto;
+}
+.Date {
+    display: flex;
+    padding-top: 1rem;
+}
+.Temp {
+    text-align: center;
+    padding-top: 0.8rem;
+    font-size: 10vh;
+    transition: opacity 0.5s ease-in;
+    
+}
+.TempWrap {
+    position: relative;
+}
+.Card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+@media only screen and (max-width: 1025px) and (orientation:landscape) {
+    .Text {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .Text {
+        font-size: 2.8vh;
+    }
+    .Temp {
+        padding-top: 0;
+        font-size: 15vh;
+    }
+
+}

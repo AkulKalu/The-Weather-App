@@ -1,0 +1,82 @@
+.Forecast {
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+    width: 33.3%;
+    border:none;
+    font-size: 2vh;
+    font-family: inherit;
+    background: none;
+    outline: none;
+    color: rgb(240, 240, 227);
+}
+
+.Forecast:hover {
+    color: gold;
+}
+
+@keyframes btn-opacity {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.DataIcon {
+    cursor: pointer;
+    background: none;
+    border:none;
+    outline: none;
+    opacity: 0.7;
+    padding: 0 1rem;
+    transition:opacity 0.5s
+}
+.DataIcon:hover {
+    opacity: 1;
+}
+.Active.DataIcon {
+    opacity: 1;
+}
+
+.Temp {
+    cursor:pointer;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 2.2vh;
+    font-weight: 700;
+    color: rgb(215, 222, 235);
+    opacity: 0.7;
+    transition: opacity 0.6s;
+}
+.Temp:hover {
+    opacity: 1;
+}
+.Active.Temp {
+    opacity: 1;
+}
+.Search {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 2.6rem;
+    right: 0;
+    background: none;
+    border-bottom-right-radius: 15px;
+    transition: transform 0.3s linear;
+}
+.Search:hover {
+    transform: scale(1.08);
+}
+
+
+.SearchIcon {
+    height: 75%;
+    margin-top: -2px;
+}

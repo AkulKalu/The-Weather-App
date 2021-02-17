@@ -1,0 +1,52 @@
+.Wrap {
+    width: 65%;
+    height: inherit;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    
+}
+.Bar {
+    height: 1vh;
+    transition: width 0.5s ease-out;
+    animation: grow-bars-x  0.5s ease-out;
+    background: linear-gradient(to right, #c93241f5, #ef463af1);
+    border-right: 1px solid rgb(233, 229, 14)!important;
+    transform-origin: left; 
+}
+@keyframes grow-bars-y {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+@keyframes grow-bars-x {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@media only screen and (min-width: 1025px)  {
+    .Bar {
+        width: 1vh;
+        transition: height 0.5s ease-out;
+        animation: grow-bars-y  0.5s ease-out forwards;
+        border-top: 1px solid rgb(177, 238, 9)!important;
+        border-right: unset!important;
+        transform-origin: bottom; 
+       
+    }
+    .Wrap {
+        height: 35Vh;
+        margin: 2vh auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        
+    }
+}

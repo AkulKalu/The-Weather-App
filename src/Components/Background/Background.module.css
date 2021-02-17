@@ -1,0 +1,62 @@
+.ContainerOne {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    z-index: -1;
+}
+.ContainerTwo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    z-index: -2;
+}
+
+.Switch {
+    animation: switchFade 3s forwards;
+}
+
+@keyframes switchFade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.Clear {
+    background-image: url(../../Assets/Images/Background/day.jpg);
+}
+.ClearNight {
+    background-image: url(../../Assets/Images/Background/night.jpg);
+}
+.Rain {
+    background-image: url(../../Assets/Images/Background/rain.jpg);
+}
+.RainNight {
+    background-image: url(../../Assets/Images/Background/rain-night.jpg);
+}
+.Snow {
+    background-image: url(../../Assets/Images/Background/snow.jpg);
+}
+.SnowNight {
+    background-image: url(../../Assets/Images/Background/snow-night.jpg);
+}
+.Thunderstorm {
+    background-image: url(../../Assets/Images/Background/thunderstorm.jpg);
+}
+.ThunderstormNight {
+    background-image: url(../../Assets/Images/Background/thunderstorm-night.jpg);
+}
+.Fog {
+    background-image: url(../../Assets/Images/Background/fog.jpg);
+}
+.FogNight {
+    background-image: url(../../Assets/Images/Background/fog-night.jpg);
+}

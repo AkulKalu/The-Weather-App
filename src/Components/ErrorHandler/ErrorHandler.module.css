@@ -1,0 +1,39 @@
+.Backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(44, 42, 42, 0.404);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@keyframes modalenter {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.Modal {
+    width: 60vw;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 30vh;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgb(59, 58, 58);
+    background-color: rgb(87, 88, 122);
+    animation: modalenter 0.6s ease-out;
+}
+@media only screen and (min-width: 1025px) {
+    .Modal {
+        width: 35vw;
+    }
+}

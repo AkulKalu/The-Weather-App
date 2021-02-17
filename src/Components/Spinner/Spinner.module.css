@@ -1,0 +1,6 @@
+.Spinner {
+    display:block;
+    width: 10%;
+    margin: auto;
+    transform: translateY(50%);
+}

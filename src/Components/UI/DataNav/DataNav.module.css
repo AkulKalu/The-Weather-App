@@ -1,0 +1,20 @@
+.Nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.Nav div {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1025px) {
+    .Nav div {
+        flex-basis: 10%;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,40 @@
+.Icon {
+    display: inline-block;
+    margin: auto;
+    
+}
+.Daily {
+    display: inline-block;
+    height: 2vh;
+}
+.Small {
+    height: 3vh;
+}
+.Medium {
+    height: 5vh;
+    
+}
+.Cover {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+}
+.Arrow {
+    display: inline-block;
+    vertical-align: auto;
+    padding-left: 0.5rem;
+    height: 1.8vh;
+    margin: auto;
+    
+}
+
+@media only screen and (min-width: 1025px) {
+    .Small {
+        height: 4vh;
+    }
+  
+}

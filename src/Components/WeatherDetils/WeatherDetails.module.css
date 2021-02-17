@@ -1,0 +1,72 @@
+
+.Window {
+    display: grid;
+    padding-top: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    height: 30vh;
+    width: 90%;
+    color: rgb(236, 233, 224);
+}
+.Wrap {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0.5rem 0;
+   flex-basis: 40%;
+  
+}
+.Tile {
+    position: relative;
+}
+.Tile p {
+    text-align: center;
+    margin: 0;
+    font-size: 2.6vw;
+    
+}
+.Tile p:first-child {
+    text-indent: -1rem;
+}
+.Tile p:last-child {
+    text-indent: 1rem;
+}
+
+.Value {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1025px) and (orientation:landscape) {
+    .Tile p {
+        font-size: 2.3vh; 
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .Window {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        margin: auto;
+        height: 12vh;
+        padding: 1.5vh 0 ;
+    }
+    .Tile p {
+        text-align: center;
+        display: block;
+        margin: 0;
+        font-size: 2vh;
+    } 
+    .Tile p:first-child {
+        text-indent: -2rem;
+    }
+    .Tile p:last-child {
+        text-indent: 2rem;
+    }
+}
+
+
+
